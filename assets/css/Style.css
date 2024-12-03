@@ -97,6 +97,7 @@ nav {
 .nav_name {
   font-size: 30px;
   font-weight: 600;
+  white-space: nowrap;
   color: var(--text-color-third);
 }
 .nav_logo span {
@@ -121,10 +122,14 @@ nav {
   padding-inline: 15px;
   margin-inline: 20px;
 }
+
 .nav_button a{
   color: black;
   overflow: hidden;
   font-size: 15px;
+  white-space: nowrap;
+  margin-right: 100vh;
+ 
 
 }
 .nav_menu_btn {
@@ -186,19 +191,20 @@ nav {
 }
 .featured-text-buttons{
   display: flex;
-  gap:20px;
+  gap:10px;
   margin-bottom: 15px;
-}
-.featured-text-buttons i{
-padding-left: 10px;
+  
+  
 }
 
 .featured-text-buttons a{
-color: black;
+  color: black;
+  font-size: 15px;
 }
 .featured-text-buttons a:hover{
-  color: var(--color-white);  
+  color: white;
 }
+
 
 .featured-text-buttons>.blue-btn{
   background: var(--first-color);
@@ -211,7 +217,7 @@ color: black;
 /* social icons */
 .social-platforms{
   display: flex;
-  margin-top: 5em;
+  margin-top: 5em;  
   gap: 30px;
 }
 .social-platforms a{
@@ -224,6 +230,7 @@ color: black;
   border-radius: 50%;
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  
 
 }
 .Icon:hover{
@@ -236,8 +243,8 @@ color: black;
   align-content: center;
   min-height: 80vh;
   width: 50%;
-
 }
+
 .image{
   margin: auto 0;
   width: 350px;
@@ -274,6 +281,7 @@ color: black;
   height: 50px;
   text-decoration: none;
   border-radius: 30px;
+  margin-top: 100px;
 }
 .scroll-btn i{
 font-size: 15px;
@@ -460,11 +468,14 @@ font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
+  overflow: visible;
   margin-block: 4px;
   gap: 5px;
 }
 .contact-info i{
   font-size: 20px;
+
 }
 .contact-info:hover.contact-info>h2,
 .contact-info:hover.contact-info>p{
@@ -620,7 +631,9 @@ footer{
     min-height: 150px;
     width: 100%;
     margin-top: 65px;
+    z-index: 101;
   }
+
   .image,.image img{
     width: 200px;
     height: 200px;
@@ -661,4 +674,8 @@ footer{
   .input-field{
       width: 100%;
   }
+  .social-icon-scroll{
+    display: none;
+  }
+  
 }
